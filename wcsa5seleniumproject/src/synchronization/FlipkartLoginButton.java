@@ -10,7 +10,7 @@ public class FlipkartLoginButton {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com");
-		//haandle a popup
+		//handle a pop up
 		driver.findElement(By.xpath("//button[text()='✕']")).click();
 		//click on cart 
 		driver.findElement(By.xpath("//span[text()='Cart']")).click();

@@ -23,7 +23,7 @@ public class CloseAllBrowser {
 		int xaxis = elementLoc.getX();
 		int yaxis = elementLoc.getY();
 		
-		//scroll till open a popup window link
+		//scroll till open a pop up window link
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy("+xaxis+","+(yaxis-80)+")");
 		

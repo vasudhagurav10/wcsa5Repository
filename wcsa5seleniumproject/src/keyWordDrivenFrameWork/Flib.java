@@ -1,6 +1,7 @@
 package keyWordDrivenFrameWork;
 
 import java.io.FileInputStream;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -13,13 +14,13 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Flib {
-    public String readExcelData(String excelPath,String sheetName,int rowCount,int cellCOunt) throws EncryptedDocumentException, IOException
+    public String readExcelData(String excelPath,String sheetName,int rowCount,int cellCount) throws EncryptedDocumentException, IOException
     {
     	FileInputStream fis = new FileInputStream(excelPath);
     	Workbook wb = WorkbookFactory.create(fis);
     	Sheet sheet = wb.getSheet(sheetName);
-    	Row row = sheet.getRow(cellCOunt);
-    	Cell cell = row.getCell(cellCOunt);
+    	Row row = sheet.getRow(rowCount);
+    	Cell cell = row.getCell(cellCount);
     	String data = cell.getStringCellValue();
     	return data;
     }

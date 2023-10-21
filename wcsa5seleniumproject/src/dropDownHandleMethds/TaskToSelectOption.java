@@ -33,7 +33,7 @@ public class TaskToSelectOption {
 		//to read list use looping statments
 		for(WebElement op:alloptin)
 		{
-			if(op.getText().equals("Paani Puri"))
+			if(op.getText().equals("Milk Shake"))
 			{
 				Thread.sleep(2000);
 				op.click();
